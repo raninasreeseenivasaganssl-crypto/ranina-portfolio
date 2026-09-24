@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ranina Sree S. | Legal Portfolio</title>
+
+<meta name="description"
+content="Ranina Sree S. — LLB Candidate, Legal Researcher and Aspiring Corporate Lawyer">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --cream: #f8f5ef;
+    --paper: #fffdf9;
+    --brown: #3b2921;
+    --brown-light: #765b4c;
+    --gold: #b89563;
+    --line: #e7ded4;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--brown);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(248,245,239,0.92);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(59,41,33,0.08);
+}
+
+.nav-inner {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: .3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.menu {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: .95;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 580px;
+    color: var(--brown-light);
+    font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 13px 24px;
+    border: 1px solid var(--brown);
+    transition: .3s;
+    font-size: 14px;
+}
+
+.btn.primary {
+    background: var(--brown);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn.primary:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+}
+
+/* HERO CARD */
+
+.hero-card {
+    position: relative;
+    background: var(--brown);
+    min-height: 520px;
+    display: flex;
+    align-items: flex-end;
+    padding: 35px;
+    overflow: hidden;
+}
+
+.hero-card::before {
+    content: "LAW";
+    position: absolute;
+    font-family: "Playfair Display", serif;
+    font-size: 180px;
+    color: rgba(255,255,255,.035);
+    top: 30px;
+    right: -25px;
+}
+
+.hero-card-content {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-card-content small {
+    color: #d7b98a;
+    letter-spacing: 2px;
+}
+
+.hero-card-content h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    margin-top: 8px;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 110px 0;
+}
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+.section-number {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.1;
+    margin-top: 8px;
+}
+
+.section-heading p {
+    max-width: 650px;
+    color: var(--brown-light);
+    margin-top: 15px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 70px;
+}
+
+.about-box {
+    border-top: 1px solid var(--brown);
+    padding-top: 20px;
+}
+
+.about-box h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+}
+
+.about-text {
+    font-size: 17px;
+    color: var(--brown-light);
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.tag {
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    font-size: 13px;
+    background: var(--paper);
+}
+
+/* STATS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.stat {
+    padding: 30px;
+    text-align: center;
+    border-right: 1px solid var(--line);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+}
+
+.stat span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--brown-light);
+}
+
+/* EXPERIENCE */
+
+.timeline {
+    position: relative;
+    border-left: 1px solid var(--gold);
+    margin-left: 10px;
+}
+
+.timeline-item {
+    padding: 0 0 55px 45px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gold);
+    position: absolute;
+    left: -6px;
+    top: 5px;
+}
+
+.timeline-date {
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.timeline-item h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 29px;
+    margin: 5px 0;
+}
+
+.timeline-item p {
+    color: var(--brown-light);
+}
+
+/* RESEARCH */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.research-card {
+    background: var(--paper);
+    padding: 35px;
+    border: 1px solid var(--line);
+    transition: .3s;
+}
+
+.research-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+}
+
+.research-card small {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.research-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    margin: 15px 0;
+}
+
+.research-card p {
+    color: var(--brown-light);
+    font-size: 14px;
+}
+
+/* SKILLS */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.skill {
+    padding: 22px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill span {
+    color: var(--gold);
+}
+
+/* CONTACT */
+
+.contact {
+    background: var(--brown);
+    color: white;
+}
+
+.contact .section-heading p {
+    color: #d8ccc4;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info a {
+    display: block;
+    padding: 17px 0;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.contact-info span {
+    display: block;
+    color: #c3a77f;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-message {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    line-height: 1.3;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--brown);
+    color: #bfb1a9;
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding: 25px 0;
+    font-size: 12px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ANIMATION */
+
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s ease;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: var(--cream);
+        flex-direction: column;
+        padding: 25px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-card {
+        min-height: 400px;
+    }
+
+    .research-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<div class="container nav-inner">
+
+<a href="#home" class="logo">
+Ranina<span>.</span>
+</a>
+
+<div class="menu" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Internships</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div class="fade">
+
+<div class="eyebrow">
+Law • Research • Advocacy
+</div>
+
+<h1>
+Ranina<br>
+<span>Sree S.</span>
+</h1>
+
+<h2>
+LLB Candidate | Legal Researcher | Aspiring Corporate Lawyer
+</h2>
+
+<p>
+A law student building a strong foundation in legal research,
+corporate law, intellectual property and emerging areas of technology law.
+</p>
+
+<div class="buttons">
+
+<a href="#about" class="btn primary">
+Explore My Portfolio
+</a>
+
+<a href="YOUR-CV-LINK.pdf" class="btn">
+Download CV
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card fade">
+
+<div class="hero-card-content">
+
+<small>LEGAL PORTFOLIO</small>
+
+<h3>
+Research.<br>
+Learn.<br>
+Advocate.
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-heading fade">
+
+<span class="section-number">01 — ABOUT</span>
+
+<h2>
+A law student with<br>
+a research mindset.
+</h2>
+
+<p>
+Building academic knowledge through research, practical exposure,
+advocacy and continuous learning.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="about-box fade">
+
+<h3>
+My Journey
+</h3>
+
+</div>
+
+<div class="about-text fade">
+
+<p>
+I am an LLB student with a growing interest in Corporate Law,
+Commercial Law, Intellectual Property Rights and Technology Law.
+</p>
+
+<br>
+
+<p>
+My academic journey has encouraged me to look beyond textbooks
+and understand how law operates in real-world situations.
+I am particularly interested in legal research, writing,
+drafting, advocacy and contemporary legal issues.
+</p>
+
+<br>
+
+<p>
+I am continuously developing my professional profile through
+internships, research projects, moot courts, conferences,
+presentations and certifications.
+</p>
+
+<div class="interests">
+
+<span class="tag">Corporate Law</span>
+<span class="tag">Company Law</span>
+<span class="tag">IPR</span>
+<span class="tag">Technology Law</span>
+<span class="tag">Contract Law</span>
+<span class="tag">ADR</span>
+<span class="tag">Legal Research</span>
+<span class="tag">Taxation</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STATS -->
+
+<div class="container">
+
+<div class="stats fade">
+
+<div class="stat">
+<strong>LLB</strong>
+<span>Legal Education</span>
+</div>
+
+<div class="stat">
+<strong>Research</strong>
+<span>Academic Focus</span>
+</div>
+
+<div class="stat">
+<strong>∞</strong>
+<span>Learning Mindset</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-heading fade">
+
+<span class="section-number">02 — EXPERIENCE</span>
+
+<h2>
+Professional<br>
+Journey
+</h2>
+
+<p>
+A growing collection of internships and practical legal experiences.
+</p>
+
+</div>
+
+
+<div class="timeline">
+
+<div class="timeline-item fade">
+
+<div class="timeline-date">
+2026 — PRESENT
+</div>
+
+<h3>
+Legal Internship — [Firm / Organisation]
+</h3>
+
+<p>
+Add your actual internship experience here, including legal
+research, drafting, case-law analysis, client-related work
+and other responsibilities you genuinely performed.
+</p>
+
+</div>
+
+
+<div class="timeline-item fade">
+
+<div class="timeline-date">
+[MONTH — YEAR]
+</div>
+
+<h3>
+Legal Internship — [Organisation]
+</h3>
+
+<p>
+Add a concise description of your responsibilities and the
+skills you developed during this internship.
+</p>
+
+</div>
+
+
+<div class="timeline-item fade">
+
+<div class="timeline-date">
+ACADEMIC EXPERIENCE
+</div>
+
+<h3>
+Moot Courts • Conferences • Presentations
+</h3>
+
+<p>
+Academic activities that have contributed to my development
+in legal research, advocacy, public speaking and legal analysis.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RESEARCH -->
+
+<section id="research">
+
+<div class="container">
+
+<div class="section-heading fade">
+
+<span class="section-number">03 — RESEARCH</span>
+
+<h2>
+Research &
+Publications
+</h2>
+
+<p>
+Exploring contemporary legal issues through academic research,
+empirical methods and interdisciplinary perspectives.
+</p>
+
+</div>
+
+
+<div class="research-grid">
+
+<div class="research-card fade">
+
+<small>01 / Technology & Governance</small>
+
+<h3>
+Market Sovereignty vs State Sovereignty
+</h3>
+
+<p>
+Governance challenges posed by global digital platforms
+and the changing relationship between digital markets
+and state regulatory power.
+</p>
+
+<br>
+
+<a href="#" class="btn">
+View Research →
+</a>
+
+</div>
+
+
+<div class="research-card fade">
+
+<small>02 / IPR & Artificial Intelligence</small>
+
+<h3>
+AI, Copyright & Licensing
+</h3>
+
+<p>
+Exploring emerging copyright questions surrounding
+generative artificial intelligence, licensing and
+creative works.
+</p>
+
+<br>
+
+<a href="#" class="btn">
+View Research →
+</a>
+
+</div>
+
+
+<div class="research-card fade">
+
+<small>03 / Public Legal Awareness</small>
+
+<h3>
+Legal English & Public Understanding
+</h3>
+
+<p>
+An empirical exploration of whether complex legal English
+affects people's understanding of documents and whether
+plain-English drafting can improve legal awareness.
+</p>
+
+<br>
+
+<a href="#" class="btn">
+View Research →
+</a>
+
+</div>
+
+
+<div class="research-card fade">
+
+<small>04 / Taxation</small>
+
+<h3>
+GST & Household Consumption
+</h3>
+
+<p>
+An empirical study examining perceived taxation burden
+and GST in relation to household consumption among
+middle-income consumers.
+</p>
+
+<br>
+
+<a href="#" class="btn">
+View Research →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-heading fade">
+
+<span class="section-number">04 — SKILLS</span>
+
+<h2>
+What I Bring
+</h2>
+
+</div>
+
+
+<div class="skills-grid">
+
+<div class="skill fade">
+<strong>Legal Research</strong>
+<span>01</span>
+</div>
+
+<div class="skill fade">
+<strong>Legal Writing</strong>
+<span>02</span>
+</div>
+
+<div class="skill fade">
+<strong>Legal Drafting</strong>
+<span>03</span>
+</div>
+
+<div class="skill fade">
+<strong>Case Law Analysis</strong>
+<span>04</span>
+</div>
+
+<div class="skill fade">
+<strong>Contract Law</strong>
+<span>05</span>
+</div>
+
+<div class="skill fade">
+<strong>Corporate Law</strong>
+<span>06</span>
+</div>
+
+<div class="skill fade">
+<strong>IPR</strong>
+<span>07</span>
+</div>
+
+<div class="skill fade">
+<strong>Technology & AI Law</strong>
+<span>08</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading fade">
+
+<span class="section-number">05 — CONTACT</span>
+
+<h2>
+Let's Connect.
+</h2>
+
+<p>
+For internships, research collaborations, academic opportunities
+and professional connections.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+<div class="contact-info fade">
+
+<a href="mailto:YOUR-EMAIL@example.com">
+
+<span>Email</span>
+
+YOUR-EMAIL@example.com
+
+</a>
+
+
+<a href="https://linkedin.com/in/YOUR-LINKEDIN">
+
+<span>LinkedIn</span>
+
+linkedin.com/in/YOUR-LINKEDIN
+
+</a>
+
+
+<a href="#">
+
+<span>Location</span>
+
+Chennai, Tamil Nadu, India
+
+</a>
+
+</div>
+
+
+<div class="contact-message fade">
+
+I am always interested in learning,
+researching and connecting with people
+working in the legal field.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-inner">
+
+<span>
+© 2026 Ranina Sree S.
+</span>
+
+<span>
+Legal Portfolio
+</span>
+
+</div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu() {
+
+    document
+    .getElementById("navLinks")
+    .classList
+    .toggle("active");
+
+}
+
+
+// SCROLL ANIMATION
+
+const elements = document.querySelectorAll(".fade");
+
+const observer = new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting) {
+
+entry.target.classList.add("visible");
+
+}
+
+});
+
+},
+
+{
+threshold: 0.12
+}
+
+);
+
+elements.forEach(element => {
+
+observer.observe(element);
+
+});
+
+</script>
+
+</body>
+</html>
